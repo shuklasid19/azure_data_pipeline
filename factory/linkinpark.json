@@ -1,0 +1,9 @@
+{
+	"name": "linkinpark",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "842cac06-b5ee-40a1-bd06-1df98e8847bc",
+		"tenantId": "d074e917-c8d9-42cc-8986-2cd1bdfbd079"
+	}
+}

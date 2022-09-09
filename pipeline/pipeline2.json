@@ -1,0 +1,38 @@
+{
+	"name": "pipeline2",
+	"properties": {
+		"activities": [
+			{
+				"name": "Notebook1",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/sidharth.shukla@diggibyte.com/sidnotebook_practice",
+					"baseParameters": {
+						"fileName": "iris_parquet"
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricks1",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"variables": {
+			"dapi4390ef6694fbc0e5004819d2d5848129": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2022-09-08T08:57:29Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
