@@ -1,0 +1,19 @@
+{
+	"name": "ouputdata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linked_service_wafa",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "new_doc.txt",
+				"folderPath": "output",
+				"container": "wafa"
+			}
+		}
+	}
+}

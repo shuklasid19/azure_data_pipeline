@@ -1,0 +1,19 @@
+{
+	"name": "wafadataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linked_service_wafa",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "new_doc.txt",
+				"folderPath": "input",
+				"container": "wafa"
+			}
+		}
+	}
+}
