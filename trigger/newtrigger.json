@@ -14,7 +14,7 @@
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
-				"frequency": "Hour",
+				"frequency": "Minute",
 				"interval": 15,
 				"startTime": "2022-09-13T14:08:00Z",
 				"timeZone": "UTC"
