@@ -1,0 +1,6 @@
+{
+	"name": "integrationRuntimeflatfile",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
