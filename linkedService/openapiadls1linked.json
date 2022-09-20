@@ -5,7 +5,8 @@
 		"type": "AzureDataLakeStore",
 		"typeProperties": {
 			"dataLakeStoreUri": "https://undefined.azuredatalakestore.net/webhdfs/v1",
-			"tenant": "d074e917-c8d9-42cc-8986-2cd1bdfbd079"
+			"tenant": "d074e917-c8d9-42cc-8986-2cd1bdfbd079",
+			"resourceGroupName": ""
 		}
 	}
 }
