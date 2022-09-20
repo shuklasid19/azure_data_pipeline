@@ -1,0 +1,195 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "linkinpark"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
+		},
+		"AzureDatabricks1_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'AzureDatabricks1'"
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase1'"
+		},
+		"AzureSqlDatabase2_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase2'"
+		},
+		"AzureSqlDatabase3sidudemy_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase3sidudemy'"
+		},
+		"RestapiService1_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'RestapiService1'"
+		},
+		"SqlServer1paramsid_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'SqlServer1paramsid'"
+		},
+		"deedofmine_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'deedofmine'"
+		},
+		"isadlscovidreportingdl2_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'isadlscovidreportingdl2'"
+		},
+		"linked_service_wafa_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'linked_service_wafa'"
+		},
+		"openapiadls1linked_servicePrincipalKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'servicePrincipalKey' of 'openapiadls1linked'"
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0907-154305-imrvsmgy"
+		},
+		"RestapiService1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://dummy.restapiexample.com/api/v1/employees"
+		},
+		"RestapiService1_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "openapiget"
+		},
+		"isadlscovidreportingdl2_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://covidstagegen2.dfs.core.windows.net/"
+		},
+		"openapiadls1linked_properties_typeProperties_dataLakeStoreUri": {
+			"type": "string",
+			"defaultValue": "https://undefined.azuredatalakestore.net/webhdfs/v1"
+		},
+		"openapiadls1linked_properties_typeProperties_servicePrincipalId": {
+			"type": "string",
+			"defaultValue": "557b8713-4744-401b-858a-c3efffd72b4f"
+		},
+		"openapiadls1linked_properties_typeProperties_tenant": {
+			"type": "string",
+			"defaultValue": "d074e917-c8d9-42cc-8986-2cd1bdfbd079"
+		},
+		"openapiadls1linked_properties_typeProperties_resourceGroupName": {
+			"type": "string",
+			"defaultValue": ""
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "linkinpark_ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"AzureBlobStorage1_connectionString": {
+						"value": "[parameters('AzureBlobStorage1_connectionString')]"
+					},
+					"AzureDatabricks1_accessToken": {
+						"value": "[parameters('AzureDatabricks1_accessToken')]"
+					},
+					"AzureSqlDatabase1_connectionString": {
+						"value": "[parameters('AzureSqlDatabase1_connectionString')]"
+					},
+					"AzureSqlDatabase2_connectionString": {
+						"value": "[parameters('AzureSqlDatabase2_connectionString')]"
+					},
+					"AzureSqlDatabase3sidudemy_connectionString": {
+						"value": "[parameters('AzureSqlDatabase3sidudemy_connectionString')]"
+					},
+					"RestapiService1_password": {
+						"value": "[parameters('RestapiService1_password')]"
+					},
+					"SqlServer1paramsid_connectionString": {
+						"value": "[parameters('SqlServer1paramsid_connectionString')]"
+					},
+					"deedofmine_connectionString": {
+						"value": "[parameters('deedofmine_connectionString')]"
+					},
+					"isadlscovidreportingdl2_accountKey": {
+						"value": "[parameters('isadlscovidreportingdl2_accountKey')]"
+					},
+					"linked_service_wafa_connectionString": {
+						"value": "[parameters('linked_service_wafa_connectionString')]"
+					},
+					"openapiadls1linked_servicePrincipalKey": {
+						"value": "[parameters('openapiadls1linked_servicePrincipalKey')]"
+					},
+					"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('AzureDatabricks1_properties_typeProperties_existingClusterId')]"
+					},
+					"RestapiService1_properties_typeProperties_url": {
+						"value": "[parameters('RestapiService1_properties_typeProperties_url')]"
+					},
+					"RestapiService1_properties_typeProperties_userName": {
+						"value": "[parameters('RestapiService1_properties_typeProperties_userName')]"
+					},
+					"isadlscovidreportingdl2_properties_typeProperties_url": {
+						"value": "[parameters('isadlscovidreportingdl2_properties_typeProperties_url')]"
+					},
+					"openapiadls1linked_properties_typeProperties_dataLakeStoreUri": {
+						"value": "[parameters('openapiadls1linked_properties_typeProperties_dataLakeStoreUri')]"
+					},
+					"openapiadls1linked_properties_typeProperties_servicePrincipalId": {
+						"value": "[parameters('openapiadls1linked_properties_typeProperties_servicePrincipalId')]"
+					},
+					"openapiadls1linked_properties_typeProperties_tenant": {
+						"value": "[parameters('openapiadls1linked_properties_typeProperties_tenant')]"
+					},
+					"openapiadls1linked_properties_typeProperties_resourceGroupName": {
+						"value": "[parameters('openapiadls1linked_properties_typeProperties_resourceGroupName')]"
+					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "linkinpark_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'linkinpark_ArmTemplate_0')]"
+			]
+		}
+	]
+}

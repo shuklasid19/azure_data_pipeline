@@ -1,0 +1,66 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "linkinpark"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase2_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase3sidudemy_connectionString": {
+			"value": ""
+		},
+		"RestapiService1_password": {
+			"value": ""
+		},
+		"SqlServer1paramsid_connectionString": {
+			"value": ""
+		},
+		"deedofmine_connectionString": {
+			"value": ""
+		},
+		"isadlscovidreportingdl2_accountKey": {
+			"value": ""
+		},
+		"linked_service_wafa_connectionString": {
+			"value": ""
+		},
+		"openapiadls1linked_servicePrincipalKey": {
+			"value": ""
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "0907-154305-imrvsmgy"
+		},
+		"RestapiService1_properties_typeProperties_url": {
+			"value": "https://dummy.restapiexample.com/api/v1/employees"
+		},
+		"RestapiService1_properties_typeProperties_userName": {
+			"value": "openapiget"
+		},
+		"isadlscovidreportingdl2_properties_typeProperties_url": {
+			"value": "https://covidstagegen2.dfs.core.windows.net/"
+		},
+		"openapiadls1linked_properties_typeProperties_dataLakeStoreUri": {
+			"value": "https://undefined.azuredatalakestore.net/webhdfs/v1"
+		},
+		"openapiadls1linked_properties_typeProperties_servicePrincipalId": {
+			"value": "557b8713-4744-401b-858a-c3efffd72b4f"
+		},
+		"openapiadls1linked_properties_typeProperties_tenant": {
+			"value": "d074e917-c8d9-42cc-8986-2cd1bdfbd079"
+		},
+		"openapiadls1linked_properties_typeProperties_resourceGroupName": {
+			"value": ""
+		}
+	}
+}
